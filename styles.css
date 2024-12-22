@@ -1,0 +1,55 @@
+/* Updated CSS for Black-and-White Theme */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Background set to black */
+    font-family: "Roboto", sans-serif;
+    color: white; /* Default text color set to white */
+}
+
+.calculator {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+    background-color: #333; /* Dark gray background for the calculator */
+}
+
+#display {
+    padding: 20px;
+    font-size: 30px;
+    border: none;
+    text-align: right;
+    background-color: #222; /* Very dark gray for display */
+    color: white; /* White text for better readability */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #555; /* Subtle border */
+    background-color: #444; /* Medium gray for buttons */
+    color: white; /* White text on buttons */
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.equal {
+    grid-column: span 3;
+    background-color: #666; /* Slightly lighter gray for the equal button */
+    color: white; /* White text */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.btn:hover {
+    background-color: #555; /* Slightly lighter gray on hover */
+    transform: scale(1.05); /* Small zoom effect */
+    opacity: 1; /* Ensure hover doesn't reduce opacity */
+}
